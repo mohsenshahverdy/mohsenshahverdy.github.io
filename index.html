@@ -3,124 +3,171 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Mohsen Shahverdi - Senior AI Engineer building production agent systems, ML infrastructure, and intelligent software." />
-    <meta name="theme-color" content="#090d14" />
-    <title>Mohsen Shahverdi — AI Systems Engineer</title>
+    <meta name="description" content="Mohsen Shahverdi - Senior AI Engineer building production AI systems, agent infrastructure, and scalable ML platforms." />
+    <meta name="theme-color" content="#f8f8f5" />
+    <title>Mohsen Shahverdi - Senior AI Engineer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="topbar">
-      <a class="logo" href="#top" aria-label="Mohsen Shahverdi — home">MS<span>/</span>AI</a>
-      <p class="topbar-title">Mohsen Shahverdi <span>· Senior AI Engineer</span></p>
-      <nav aria-label="Primary navigation"><a href="#agent-platform">Agent platform</a><a href="#research">Research</a><a href="#systems">Systems</a></nav>
-      <a class="topbar-contact" href="mailto:mohsen.shahverdi97@gmail.com">Contact ↗</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Mohsen Shahverdi - home">MOHSEN<br />SHAHVERDI<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+      </nav>
+      <a class="contact-link" href="mailto:mohsen.shahverdi97@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
     </header>
 
     <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-grid"></div>
-        <div class="hero-content">
-          <p class="eyebrow"><span class="status-dot"></span> Available for consequential systems</p>
-          <h1>I build the<br /><em>infrastructure</em><br />around intelligence.</h1>
-          <p class="hero-description">Senior AI Engineer working across agent platforms, applied ML, and backend systems. I make complex AI workflows observable, dependable, and useful in production.</p>
-          <div class="hero-actions"><a href="#agent-platform">Explore the work <span>↓</span></a><a href="https://github.com/mohsenshahverdy">GitHub <span>↗</span></a></div>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-main">
+          <p class="kicker">Senior AI Engineer · Heidelberg, Germany</p>
+          <h1 id="hero-title">Building AI systems<br />that hold up<br /><em>in production.</em></h1>
+          <p class="hero-copy">I work at the intersection of agent infrastructure, scalable backend systems, and machine learning—turning ambitious AI workflows into reliable software.</p>
+          <div class="hero-links">
+            <a class="action-link" href="https://github.com/mohsenshahverdy">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="action-link" href="https://www.linkedin.com/in/mohsen-shahverdi/">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <aside class="profile-module" aria-label="Profile summary">
-          <div class="portrait-wrap"><img src="assets/mohsen-shahverdi.jpg" alt="Mohsen Shahverdi" /></div>
-          <div class="profile-copy"><p class="profile-label">SYSTEMS PROFILE</p><h2>8+ years</h2><p>From computer vision and recommender systems to AI compilers and multi-agent platforms.</p></div>
-          <div class="profile-signal"><span>PY</span><span>TS</span><span>ML</span><span>LLM</span></div>
+
+        <aside class="now-card">
+          <img class="portrait" src="assets/mohsen-shahverdi.jpg" alt="Mohsen Shahverdi" />
+          <div class="now-card-top"><span class="signal"></span><span>NOW</span></div>
+          <p class="now-role">Senior AI Engineer</p>
+          <p class="now-company">Lensing AI / AISpecify</p>
+          <p>Designing agent infrastructure, AI compiler workflows, observability, and orchestration for enterprise-scale application generation.</p>
+          <dl>
+            <div><dt>40 pages</dt><dd>integrated application in ~25 min</dd></div>
+            <div><dt>~9x</dt><dd>lower generation cost</dd></div>
+            <div><dt>200+</dt><dd>page platforms supported</dd></div>
+          </dl>
         </aside>
       </section>
 
-      <section class="manifesto" aria-label="Engineering approach">
-        <p>AI systems are more than prompts and models. <strong>They are the tools, context, policies, measurements, and recovery paths that make intelligence work under real constraints.</strong></p>
+      <section class="statement" aria-label="Engineering focus">
+        <p>My work is not just about choosing a model. It is about <strong>context, tools, execution policy, measurement, reliability, and the path from output to action.</strong></p>
       </section>
 
-      <section class="chapter agent-chapter" id="agent-platform" aria-labelledby="agent-title">
-        <div class="chapter-heading"><p class="eyebrow">01 / Agent platform</p><h2 id="agent-title">From request<br />to reliable output.</h2><p>I work in the Build/Compiler team on AISpecify, a spec-driven platform for enterprise application generation. This is a confidentiality-safe view of the infrastructure I personally design and build.</p></div>
-
-        <div class="scenario-shell" data-scenario="spec">
-          <div class="scenario-tabs" role="tablist" aria-label="Agent-platform scenarios">
-            <button class="scenario-tab is-active" role="tab" aria-selected="true" data-scenario-target="spec"><b>01</b> Plan</button>
-            <button class="scenario-tab" role="tab" aria-selected="false" data-scenario-target="execute"><b>02</b> Execute</button>
-            <button class="scenario-tab" role="tab" aria-selected="false" data-scenario-target="observe"><b>03</b> Observe</button>
-            <button class="scenario-tab" role="tab" aria-selected="false" data-scenario-target="recover"><b>04</b> Recover</button>
-          </div>
-          <div class="scenario-stage" aria-live="polite">
-            <div class="node node-spec"><small>INPUT</small><strong>Spec + context</strong></div>
-            <div class="node node-graph"><small>PLAN</small><strong>Dependency graph</strong></div>
-            <div class="node node-agents"><small>EXECUTE</small><strong>Agents + tools</strong></div>
-            <div class="node node-eval"><small>VERIFY</small><strong>Evaluate + repair</strong></div>
-            <div class="node node-output"><small>OUTPUT</small><strong>Application</strong></div>
-            <i class="path path-one"></i><i class="path path-two"></i><i class="path path-three"></i><i class="path path-four"></i>
-            <span class="pulse pulse-one"></span><span class="pulse pulse-two"></span><span class="pulse pulse-three"></span>
-          </div>
-          <div class="scenario-detail">
-            <p class="scenario-index">SCENARIO <span data-scenario-index>01</span> / 04</p>
-            <h3 data-scenario-title>Plan only what the task needs.</h3>
-            <p data-scenario-copy>The graph models dependencies among agents, tools, generation stages, and artifacts so the system can determine task order, targeted context, and model/tool selection.</p>
-            <ul data-scenario-list><li>Graph-based execution planning</li><li>Context-window management</li><li>Model and tool selection</li></ul>
-          </div>
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-intro">
+          <p class="kicker">Selected work</p>
+          <h2 id="work-title">Systems, not demos.</h2>
+          <p>I build the surrounding infrastructure that lets AI capabilities operate reliably in real products.</p>
         </div>
 
-        <div class="impact-ribbon" aria-label="AISpecify outcomes">
-          <div><span>THROUGHPUT</span><strong>5 pages / 1 hr <b>→</b> 40 pages / ~25 min</strong></div>
-          <div><span>ECONOMICS</span><strong>~9x lower generation cost</strong></div>
-          <div><span>SCALE</span><strong>200+ page platforms supported</strong></div>
-          <div><span>EFFICIENCY</span><strong>Up to 60% lower processing cost</strong></div>
-        </div>
-      </section>
+        <article class="featured-work">
+          <div class="work-number">01</div>
+          <div class="featured-copy">
+            <p class="work-type">AGENT INFRASTRUCTURE / CURRENT</p>
+            <h3>AISpecify<br />Build &amp; Compiler Platform</h3>
+            <p>As a core engineer in the Build/Compiler team, I architected key systems for a spec-driven platform that generates ERP-scale enterprise applications: the AI compiler, graph-based orchestration, full-stack observability, and an extensible plugin-based agent harness.</p>
+            <a class="inline-link" href="#experience">See experience <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="work-outcomes">
+            <div><strong>5 pages / 1 hr</strong><span>Previous builder baseline</span></div>
+            <div><strong>40 pages / ~25 min</strong><span>Integrated enterprise application</span></div>
+            <div><strong>Up to 60%</strong><span>Lower processing cost through routing, parallelization &amp; caching</span></div>
+          </div>
+        </article>
 
-      <section class="chapter research-chapter" id="research" aria-labelledby="research-title">
-        <div class="chapter-heading research-heading"><p class="eyebrow">02 / Research system</p><h2 id="research-title">When vehicles<br />learn what to ask.</h2><p>My Master's project explores communication-aware cooperative perception: how vehicles can exchange only the scene information needed for safer, better detection.</p><a class="text-button" href="https://github.com/mohsenshahverdy/comm-aware-v2v-perception">Open research repository ↗</a></div>
-
-        <div class="research-board">
-          <figure class="research-main-image"><img src="assets/v2v-3d-preview.png" alt="Interactive 3D cooperative perception research presentation" /><figcaption><span>INTERACTIVE THESIS EXPERIENCE</span><b>Receiver-driven sparse communication, explained as a live scenario.</b></figcaption></figure>
-          <figure class="research-policy"><img src="assets/v2v-policy-comparison.png" alt="Comparison of five communication policies for cooperative perception" /><figcaption><span>METHOD COMPARISON</span><b>From full communication to learned receiver requests.</b></figcaption></figure>
-          <div class="research-notes"><p>THE QUESTION</p><h3>Can the receiver request only the useful information?</h3><ul><li>PointPillars &amp; V2V intermediate fusion</li><li>Receiver-driven and temporal request policies</li><li>Communication, safety, and trajectory-aware evaluation</li><li>Config-driven experiments, logging, and smoke tests</li></ul></div>
-        </div>
-      </section>
-
-      <section class="chapter systems-chapter" id="systems" aria-labelledby="systems-title">
-        <div class="chapter-heading"><p class="eyebrow">03 / Production systems</p><h2 id="systems-title">Signals, models,<br />feedback loops.</h2><p>Production AI starts with a real data flow. These systems connected user behavior, data pipelines, models, APIs, monitoring, and measurable outcomes.</p></div>
-
-        <div class="systems-grid">
-          <article class="system-card hich-card">
-            <div class="card-top"><p>HICH CO / AI SOFTWARE ENGINEER</p><span>2024—25</span></div>
-            <h3>A living<br />recommendation loop.</h3>
-            <div class="event-stream" aria-label="Event stream from user signals to models, rankings, and feedback">
-              <span>USER SIGNALS</span><i></i><span>KAFKA</span><i></i><span>FEATURES</span><i></i><span>RANKING</span><i></i><span>FEEDBACK</span>
-            </div>
-            <p>Event-driven recommendations, semantic retrieval, quality scoring, OpenAI pipelines, fraud detection, and Grafana monitoring—built around real behavior data.</p>
-            <div class="results"><div><strong>+18%</strong><span>activity</span></div><div><strong>-33%</strong><span>post skipping</span></div><div><strong>98.1%</strong><span>quality accuracy</span></div></div>
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-number">02</div>
+            <p class="work-type">MASTER'S RESEARCH</p>
+            <h3>Communication-Aware V2V Perception</h3>
+            <p>Cooperative 3D object detection research with PointPillars and V2V intermediate fusion. Explores receiver-driven, temporal, and learned policies to reduce communication while preserving detection quality.</p>
+            <ul class="tag-list"><li>PyTorch</li><li>3D Perception</li><li>Evaluation</li></ul>
+            <a class="inline-link" href="https://github.com/mohsenshahverdy/comm-aware-v2v-perception">View repository <span aria-hidden="true">↗</span></a>
           </article>
-          <article class="system-card offer-card">
-            <div class="card-top"><p>OFFERLAND / ML ENGINEER</p><span>2022—24</span></div>
-            <h3>Prediction as<br />a maintained system.</h3>
-            <div class="lifecycle" aria-label="Machine learning lifecycle from data to model to monitoring and retraining"><span>DATA</span><b>→</b><span>MODEL</span><b>→</b><span>API</span><b>→</b><span>DRIFT</span><b>→</b><span>RETRAIN</span></div>
-            <p>Farmland valuation combined model development, automated retraining triggers, operational alerts, dashboards, asynchronous APIs, and Redis caching.</p>
-            <div class="results"><div><strong>94%</strong><span>accuracy</span></div><div><strong>60%+</strong><span>faster API</span></div><div><strong>93%+</strong><span>postal-code coverage</span></div></div>
+          <article class="work-card work-card-dark">
+            <div class="work-number">03</div>
+            <p class="work-type">INTERACTIVE RESEARCH EXPERIENCE</p>
+            <h3>Receiver-Driven Sparse V2V</h3>
+            <p>An interactive 3D browser presentation that turns thesis research on communication policies, temporal caching, and safety-aware evaluation into an explorable system.</p>
+            <ul class="tag-list"><li>React</li><li>Three.js</li><li>React Three Fiber</li></ul>
+            <a class="inline-link" href="https://github.com/mohsenshahverdy/receiver-driven-sparse-v2v-3D-presentation">View repository <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="work-card">
+            <div class="work-number">04</div>
+            <p class="work-type">BACKEND SYSTEM</p>
+            <h3>User Profiling System</h3>
+            <p>A FastAPI service for demographic and interaction-based segmentation, with Docker support and pytest coverage for repeatable local development.</p>
+            <ul class="tag-list"><li>Python</li><li>FastAPI</li><li>Docker</li><li>pytest</li></ul>
+            <a class="inline-link" href="https://github.com/mohsenshahverdy/UserProfilling">View repository <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="work-card">
+            <div class="work-number">05</div>
+            <p class="work-type">COMPUTER VISION</p>
+            <h3>Offline Signature Verification</h3>
+            <p>Deep-learning research in signature verification using Siamese convolutional neural networks—an early foundation for my work in reliable computer-vision systems.</p>
+            <ul class="tag-list"><li>Keras</li><li>CNNs</li><li>Siamese Networks</li></ul>
+            <a class="inline-link" href="https://github.com/mohsenshahverdy/Offline-Signature-Verification-using-Siamese-Network">View repository <span aria-hidden="true">↗</span></a>
           </article>
         </div>
       </section>
 
-      <section class="builds" aria-labelledby="builds-title">
-        <div class="builds-heading"><p class="eyebrow">04 / More builds</p><h2 id="builds-title">Different problems.<br />Same engineering instinct.</h2></div>
-        <div class="builds-grid">
-          <a class="build-card" href="https://github.com/mohsenshahverdy/UserProfilling"><span>API / PYTHON</span><h3>User profiling</h3><p>FastAPI service for demographic and interaction-based segmentation, with Docker and pytest foundations.</p><b>View project ↗</b></a>
-          <a class="build-card" href="https://github.com/mohsenshahverdy/Offline-Signature-Verification-using-Siamese-Network"><span>VISION / DEEP LEARNING</span><h3>Signature verification</h3><p>Siamese convolutional networks for offline signature verification.</p><b>View project ↗</b></a>
-          <a class="build-card" href="https://github.com/mohsenshahverdy/receiver-driven-sparse-v2v-3D-presentation"><span>WEBGL / RESEARCH STORY</span><h3>3D thesis experience</h3><p>React Three Fiber presentation for a complex autonomous-driving research narrative.</p><b>View project ↗</b></a>
+      <section class="section engineering" aria-labelledby="engineering-title">
+        <div class="section-intro">
+          <p class="kicker">Engineering focus</p>
+          <h2 id="engineering-title">The layers I own.</h2>
+        </div>
+        <div class="focus-list">
+          <article><span>01</span><div><h3>Agent systems &amp; execution</h3><p>Multi-agent orchestration, AI compiler workflows, tool calling, MCP integrations, dependency graphs, model routing, context engineering, and plugin architectures.</p></div></article>
+          <article><span>02</span><div><h3>Reliability &amp; visibility</h3><p>Tracing LLM calls and agent trajectories; evaluation, validation, consistency checks, failure analysis, automated repair, and production monitoring.</p></div></article>
+          <article><span>03</span><div><h3>ML systems &amp; data products</h3><p>Recommendation, predictive modeling, multimodal fine-tuning, semantic retrieval, computer vision, drift detection, and retraining workflows.</p></div></article>
+          <article><span>04</span><div><h3>Backend &amp; infrastructure</h3><p>Python, FastAPI, TypeScript, Kafka, Redis, ClickHouse, PostgreSQL, Docker, AWS, CI/CD, APIs, and distributed systems.</p></div></article>
         </div>
       </section>
 
-      <section class="contact" aria-labelledby="contact-title">
-        <p class="eyebrow">Let's talk</p><h2 id="contact-title">Have a hard system<br />worth building?</h2><a class="email" href="mailto:mohsen.shahverdi97@gmail.com">mohsen.shahverdi97@gmail.com <span>↗</span></a>
+      <section class="section experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-intro">
+          <p class="kicker">Experience</p>
+          <h2 id="experience-title">Production work<br />with measurable impact.</h2>
+        </div>
+        <div class="experience-list">
+          <article>
+            <p class="period">SEP 2025 — PRESENT</p>
+            <div><h3>Senior AI Engineer — Agentic AI Systems</h3><p class="company">Lensing AI <span>· Heidelberg, Germany</span></p><p>Architecting AI compiler workflows, graph orchestration, observability, context management, agent harnesses, routing, validation, and repair systems for AISpecify.</p></div>
+          </article>
+          <article>
+            <p class="period">AUG 2024 — SEP 2025</p>
+            <div><h3>AI Software Engineer</h3><p class="company">Hich Co <span>· Remote</span></p><p>Built event-driven recommendation, semantic retrieval, fraud detection, multimodal quality scoring, OpenAI pipelines, and Grafana monitoring. Increased activity by <strong>18%</strong> and monthly revenue by <strong>60%+</strong>.</p></div>
+          </article>
+          <article>
+            <p class="period">JUL 2022 — AUG 2024</p>
+            <div><h3>Machine Learning Engineer</h3><p class="company">Offerland <span>· Remote</span></p><p>Built production prediction, drift detection, retraining, alerting, and API systems for farmland valuation. Achieved <strong>94% accuracy</strong> and cut API latency by <strong>60%+</strong>.</p></div>
+          </article>
+          <article>
+            <p class="period">2018 — 2022</p>
+            <div><h3>Computer Vision, Data Science &amp; Software Engineering</h3><p class="company">Forsat Co · Bale Messenger · Yektanet · ShaniKala</p><p>Delivered computer-vision inference, recommender systems, NLP applications, backend APIs, and marketplace integrations across production environments.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section research" id="research" aria-labelledby="research-title">
+        <div>
+          <p class="kicker">Research</p>
+          <h2 id="research-title">Applied research should be inspectable.</h2>
+        </div>
+        <div class="research-content">
+          <p>My Master's research investigates communication-aware cooperative perception for autonomous vehicles: how participants can request and exchange only the information needed for safer, better detection. The public project includes configurable experiments, communication and safety metrics, centralized logging, and smoke-test tooling.</p>
+          <a class="inline-link" href="https://github.com/mohsenshahverdy/comm-aware-v2v-perception">Explore the research repository <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <p class="kicker">Contact</p>
+        <h2 id="contact-title">Have an AI system<br />worth making reliable?</h2>
+        <a class="email" href="mailto:mohsen.shahverdi97@gmail.com">mohsen.shahverdi97@gmail.com <span aria-hidden="true">↗</span></a>
       </section>
     </main>
 
-    <footer><span>© 2026 Mohsen Shahverdi</span><div><a href="https://github.com/mohsenshahverdy">GitHub</a><a href="https://www.linkedin.com/in/mohsen-shahverdi/">LinkedIn</a></div></footer>
-    <script src="script.js"></script>
+    <footer>
+      <span>© 2026 Mohsen Shahverdi</span>
+      <div><a href="https://github.com/mohsenshahverdy">GitHub</a><a href="https://www.linkedin.com/in/mohsen-shahverdi/">LinkedIn</a></div>
+    </footer>
   </body>
 </html>
