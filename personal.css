@@ -9,7 +9,11 @@
 .personal-screen nav{margin:0}
 .personal-screen .about-footer{flex-direction:row;padding-bottom:0}
 .personal-screen figure{border:0}
-html{scroll-padding-top:0}
+html{scroll-padding-top:0;scroll-snap-type:y mandatory}
+main > section{scroll-snap-align:start;scroll-snap-stop:always;min-height:100svh}
+/* Oversized sections keep their natural height and remain freely scrollable. */
+@media(max-width:700px){html{scroll-snap-type:y proximity}}
+@media(prefers-reduced-motion:reduce){html{scroll-snap-type:none;scroll-behavior:auto}}
 html[data-theme=light] .personal-screen{color:#20313a}
 html[data-theme=light] .personal-about{background:#edf2f4}
 html[data-theme=light] .personal-screen p,html[data-theme=light] .personal-screen .interests{color:#52656f}
