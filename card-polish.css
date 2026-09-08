@@ -1,0 +1,24 @@
+.company-card{border-radius:20px;background:linear-gradient(145deg,#20282ed9,#171e23);box-shadow:0 8px 24px #0002,inset 0 1px 0 #ffffff08;transition:border-color .2s,box-shadow .2s}
+.company-card:hover{border-color:#68879d;box-shadow:0 12px 32px #0003,inset 0 1px 0 #ffffff0d}
+.company-card[open]{border-color:#8eb9d5;box-shadow:0 12px 36px #0003,0 0 0 1px #9cc9ef18}
+.company-card>summary{grid-template-columns:56px minmax(0,1fr) auto 96px;padding:26px;gap:20px;border-radius:20px}
+.company-card[open]>summary{border-radius:20px 20px 0 0}
+.company-logo{width:56px;height:56px;border-radius:14px;box-shadow:0 3px 9px #0002}
+.company-toggle{display:flex;align-items:center;justify-content:flex-end;gap:8px;font:11px var(--sans)}
+.company-toggle:before{content:'Details';color:var(--muted)}
+.company-toggle:after{display:grid;place-items:center;content:'+';width:32px;height:32px;flex:0 0 32px;border:1px solid #678aa2;border-radius:10px;background:#9cc9ef0e;box-shadow:inset 0 1px 0 #ffffff09;font:21px/1 var(--sans);color:var(--blue)}
+.company-card[open] .company-toggle:before{content:'Close'}
+.company-card[open] .company-toggle:after{content:'−';background:#9cc9ef20}
+.company-card>summary:hover .company-toggle:after{background:#9cc9ef26;border-color:var(--blue)}
+.company-content{border-radius:0 0 20px 20px}
+#experience .company-list{position:relative;padding-left:32px;gap:20px}
+#experience .company-list:before{content:'';position:absolute;left:7px;top:40px;bottom:75px;width:1px;background:linear-gradient(#9cc9ef80,#637b9040)}
+#experience .company-card{position:relative;overflow:visible}
+#experience .company-card:before{content:'';position:absolute;left:-32px;top:34px;width:13px;height:13px;border:2px solid #7a9aaf;border-radius:50%;background:var(--bg);box-shadow:0 0 0 5px var(--bg);transition:background .2s,border-color .2s}
+#experience .company-card[open]:before{background:var(--blue);border-color:var(--blue);box-shadow:0 0 0 5px var(--bg),0 0 0 6px #9cc9ef33}
+.workbench,.evaluation-lab,.mini-flow,.skill-group{border-radius:14px}.theme-control{border-radius:10px}.theme-control button{border-radius:7px}
+[data-theme=light] .company-card{background:linear-gradient(145deg,#fff,#f5f8fa);box-shadow:0 7px 22px #233b5010,inset 0 1px 0 #fff}
+[data-theme=light] .company-card:hover,[data-theme=light] .company-card[open]{box-shadow:0 10px 28px #233b501c;border-color:#729ab7}
+[data-theme=light] .company-toggle:after{background:#e9f1f7;border-color:#a4bfd1}
+@media(max-width:700px){#experience .company-list{padding-left:24px;gap:16px}#experience .company-list:before{left:5px}#experience .company-card:before{left:-25px;width:11px;height:11px;top:28px}.company-card>summary{grid-template-columns:44px minmax(0,1fr) 34px;gap:12px;padding:18px 15px}.company-logo{width:44px;height:44px;border-radius:12px}.company-logo img{width:32px;height:32px}.company-date{grid-column:2;grid-row:2;text-align:left}.company-toggle{grid-column:3;grid-row:1 / span 2}.company-toggle:before{display:none}.company-title{font-size:17px}.company-domain{font-size:10px}.company-card{border-radius:17px}.company-content{border-radius:0 0 17px 17px}}
+@media(prefers-reduced-motion:reduce){.company-card,.company-card:before{transition:none}}
