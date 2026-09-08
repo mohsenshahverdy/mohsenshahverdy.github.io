@@ -18,3 +18,4 @@
 @media(max-width:1000px){.toolkit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.toolkit-heading{align-items:start}.toolkit-heading>p{max-width:320px}}
 @media(max-width:600px){#skills{padding:28px 7vw 40px;gap:24px}.toolkit-grid{grid-template-columns:1fr;gap:16px}.toolkit-heading{display:block}.toolkit-heading>p{margin-top:20px;font-size:13px}.toolkit-card{padding:22px}.toolkit-card>p{font-size:13px}}
 @media(prefers-reduced-motion:reduce){.toolkit-card{transition:none}}
+.toolkit-card{padding:20px}.toolkit-card h3{font-size:19px;margin:12px 0 7px}.toolkit-card>p{font-size:11px;margin-bottom:12px}.toolkit-topics{gap:5px;margin-bottom:12px}.toolkit-tools{gap:8px 13px;min-height:0}.toolkit-tools:empty{display:none}.toolkit-tools>span{font-size:11px}.toolkit-tools img{width:20px;height:20px}.toolkit-case{margin-top:12px;padding-top:10px}.toolkit-grid{align-items:stretch}

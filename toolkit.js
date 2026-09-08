@@ -1,13 +1,162 @@
 (() => {
 const groups=[
-{icon:'⌘',label:'01 / Agent infrastructure',title:'Agents that work together',text:'The runtime around the model: coordinating tools, context, dependencies, and feedback across an application build.',tags:['Graph orchestration','Context engineering','Plugin harnesses'],tools:['typescript','python'],link:'lensing',where:'Inside AISpecify'},
-{icon:'◈',label:'02 / Machine learning',title:'From data to a useful model',text:'Training and adapting models for recommendations, multimodal content, computer vision, and valuation.',tags:['LoRA & fine-tuning','Computer vision','Recommendation systems'],tools:['pytorch','tensorflow'],link:'hich',where:'The Hich systems'},
-{icon:'∑',label:'03 / Mathematical foundations',title:'The theory behind the behavior',text:'What I keep exploring: mathematical problems, statistics, and the assumptions that shape how models learn and generalize.',tags:['Statistical reasoning','Uncertainty','Learning theory'],tools:[],link:'about',where:'What makes me curious'},
-{icon:'↺',label:'04 / Evaluation & reliability',title:'Measure. Understand. Improve.',text:'Following agent trajectories, comparing model behavior, detecting drift, and closing the loop with validation and repair.',tags:['LLM observability','Evaluation pipelines','Automated retraining'],tools:['grafana','python'],link:'offerland',where:'A model’s lifecycle'},
-{icon:'&lt;/&gt;',label:'05 / Software & delivery',title:'Make the experiment usable',text:'Turning system designs into APIs, services, integrations, and tested software that other people can build on.',tags:['API & system design','Unit & E2E testing','CI/CD'],tools:['fastapi','typescript','docker'],link:'forsat',where:'From model to service'},
-{icon:'▤',label:'06 / Data systems',title:'Keep the information moving',text:'Building the data flows behind user profiles, recommendation pools, and production services—with caching and monitoring in the loop.',tags:['Event-driven pipelines','SQL & data modeling','Caching'],tools:['postgresql','redis'],link:'hich',where:'Profiles to recommendations'}
+  {
+    "icon": "⌘",
+    "label": "01 / Agent systems",
+    "title": "Agentic AI & LLM Infrastructure",
+    "text": "Architectures, runtimes, and tooling for production agents.",
+    "tags": [
+      "Multi-agent orchestration",
+      "Agent runtimes",
+      "AI compiler workflows",
+      "Sequential & loop-based agents",
+      "Dependency graphs",
+      "Context-window engineering",
+      "Context injection",
+      "Model routing",
+      "Plugin architectures",
+      "MCP",
+      "Tool calling",
+      "RAG"
+    ],
+    "tools": [],
+    "link": "lensing",
+    "where": "Agent architecture at Lensing"
+  },
+  {
+    "icon": "◈",
+    "label": "02 / Model development",
+    "title": "LLM Training & Applied ML",
+    "text": "Adapting models and building task-specific learning systems.",
+    "tags": [
+      "Post-training",
+      "Fine-tuning",
+      "LoRA / PEFT",
+      "NLP",
+      "Computer vision",
+      "3D cooperative perception",
+      "Recommendation systems",
+      "Time series",
+      "Clustering",
+      "Collaborative filtering",
+      "Feature engineering",
+      "User profiling",
+      "YOLO",
+      "Siamese networks"
+    ],
+    "tools": [
+      "pytorch",
+      "tensorflow",
+      "Hugging Face",
+      "scikit-learn",
+      "XGBoost"
+    ],
+    "link": "hich",
+    "where": "Applied ML at Hich"
+  },
+  {
+    "icon": "↺",
+    "label": "03 / Quality & reliability",
+    "title": "Evaluation & Observability",
+    "text": "Understanding behavior and keeping deployed systems reliable.",
+    "tags": [
+      "LLM evaluation",
+      "LLM observability",
+      "Agent trajectory tracing",
+      "Benchmarking",
+      "Guardrails",
+      "Validation",
+      "Consistency checking",
+      "Automated repair",
+      "Concept-drift detection",
+      "Automated retraining",
+      "Model monitoring",
+      "Prompt / context caching"
+    ],
+    "tools": [
+      "grafana",
+      "Metabase",
+      "Tableau"
+    ],
+    "link": "offerland",
+    "where": "Evaluation and retraining at Offerland"
+  },
+  {
+    "icon": "&lt;/&gt;",
+    "label": "04 / Languages & services",
+    "title": "Software & API Engineering",
+    "text": "The implementation layer behind the models and platforms.",
+    "tags": [
+      "REST APIs",
+      "Microservices",
+      "Distributed systems",
+      "System design",
+      "Enterprise integrations",
+      "Parallel execution"
+    ],
+    "tools": [
+      "python",
+      "typescript",
+      "Node.js",
+      "fastapi",
+      "Flask",
+      "ASP.NET / .NET Core"
+    ],
+    "link": "forsat",
+    "where": "Production services at Forsat"
+  },
+  {
+    "icon": "▤",
+    "label": "05 / Storage & pipelines",
+    "title": "Data Engineering & Databases",
+    "text": "From event streams to the data that models and services consume.",
+    "tags": [
+      "SQL",
+      "Event-driven pipelines",
+      "Data preprocessing",
+      "Data modeling",
+      "Caching",
+      "Recommendation pools"
+    ],
+    "tools": [
+      "postgresql",
+      "MySQL",
+      "ClickHouse",
+      "MongoDB",
+      "redis",
+      "Kafka",
+      "PySpark",
+      "MSSQL"
+    ],
+    "link": "hich",
+    "where": "Data systems at Hich"
+  },
+  {
+    "icon": "↑",
+    "label": "06 / Production delivery",
+    "title": "Infrastructure, Testing & Delivery",
+    "text": "Shipping, integrating, and operating dependable software.",
+    "tags": [
+      "CI/CD",
+      "Unit testing",
+      "E2E testing",
+      "Model serving",
+      "Performance optimization",
+      "API latency optimization",
+      "Cost optimization",
+      "Customer deployment"
+    ],
+    "tools": [
+      "docker",
+      "AWS",
+      "Git",
+      "GitLab"
+    ],
+    "link": "lensing",
+    "where": "Production engineering at Lensing"
+  }
 ];
 const names={python:'Python',pytorch:'PyTorch',typescript:'TypeScript',docker:'Docker',postgresql:'PostgreSQL',redis:'Redis',tensorflow:'TensorFlow',fastapi:'FastAPI',grafana:'Grafana'};
-document.querySelector('#skills').innerHTML=`<div class="section-bar"><span class="eyebrow">03 / Skills & toolkit</span><span class="right">Ideas, methods, and the tools I use</span></div><div class="toolkit-heading"><h2 id="skills-heading">How I think.<br><span>What I build with.</span></h2><p>From the theory behind a model to the systems around it.<br>A few connected parts of my engineering toolkit.</p></div><div class="toolkit-grid">${groups.map(g=>`<article class="toolkit-card"><div class="toolkit-card-top"><span class="toolkit-symbol" aria-hidden="true">${g.icon}</span><span class="eyebrow">${g.label}</span></div><h3>${g.title}</h3><p>${g.text}</p><ul class="toolkit-topics">${g.tags.map(t=>`<li>${t}</li>`).join('')}</ul><div class="toolkit-tools">${g.tools.length?g.tools.map(t=>`<span><img src="assets/technology/${t}.svg" alt="" width="19" height="19">${names[t]}</span>`).join(''):'<span class="theory-note">A continuing curiosity—not a proficiency score.</span>'}</div><a class="toolkit-case" href="#${g.link}">${g.where}<span aria-hidden="true"> ↗</span></a></article>`).join('')}</div>`;
+document.querySelector('#skills').innerHTML=`<div class="section-bar"><span class="eyebrow">03 / Skills & toolkit</span><span class="right">Ideas, methods, and the tools I use</span></div><div class="toolkit-heading"><h2 id="skills-heading">Technical skills.<br><span>The full toolkit.</span></h2><p>Architectures, methods, languages, and technologies<br>across my engineering and research work.</p></div><div class="toolkit-grid">${groups.map(g=>`<article class="toolkit-card"><div class="toolkit-card-top"><span class="toolkit-symbol" aria-hidden="true">${g.icon}</span><span class="eyebrow">${g.label}</span></div><h3>${g.title}</h3><p>${g.text}</p><ul class="toolkit-topics">${g.tags.map(t=>`<li>${t}</li>`).join('')}</ul><div class="toolkit-tools">${g.tools.map(t=>`<span>${names[t]?`<img src="assets/technology/${t}.svg" alt="" width="19" height="19">`:""}${names[t]||t}</span>`).join("")}</div><a class="toolkit-case" href="#${g.link}">${g.where}<span aria-hidden="true"> ↗</span></a></article>`).join('')}</div>`;
 document.querySelectorAll('.toolkit-case').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(a.hash.slice(1));if(target?.tagName==='DETAILS')target.open=true}));
 })();
