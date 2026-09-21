@@ -1,0 +1,22 @@
+/* One viewport contract, including browsers with non-overlay scrollbars. */
+:root{--page-width:100%;--screen-height:100svh}
+@supports(height:100dvh){:root{--screen-height:100dvh}}
+html{scroll-padding:0}
+.personal-screen,#skills{width:var(--page-width);margin-left:calc((100% - var(--page-width))/2)}
+main>section{min-height:var(--screen-height);scroll-margin:0;scroll-snap-align:start;scroll-snap-stop:always}
+#experience{display:flow-root;padding-bottom:28px}
+#experience .logo-note{margin-bottom:0}
+#research,#education{display:flex;flex-direction:column;padding-block:30px;gap:24px}
+#research .section-bar,#education .section-bar{flex-shrink:0}
+#research .academic-list,#education .academic-list{margin-block:auto;padding-block:24px;width:100%}
+.academic-heading{font-size:clamp(30px,3vw,44px);font-weight:450;letter-spacing:-1px;line-height:1.2;margin:0 0 10px}
+.academic-description{font-size:14px;color:var(--muted);margin:0 0 24px;max-width:650px}
+#contact{scroll-snap-align:end;scroll-snap-stop:normal;position:relative;flex-wrap:wrap}
+#contact .footer-links{flex-wrap:wrap}
+.company-card{scroll-margin-block-start:16px}
+/* Give short screens room for the controls instead of overlapping the portrait. */
+.personal-hero{padding-top:90px;padding-bottom:125px}
+.personal-hero .hero-content{flex-shrink:0}
+@media(min-width:1001px) and (min-height:800px){#skills{gap:14px;padding-block:25px}.toolkit-grid{gap:16px}.toolkit-card{padding:18px}}
+@media(max-width:700px){#research,#education{padding-block:24px;gap:14px}.personal-hero{padding-top:110px;padding-bottom:125px}.personal-hero .topbar{flex-wrap:wrap;row-gap:12px}.personal-hero .bottom-note{gap:20px;line-height:1.6}.academic-description{font-size:13px}}
+@media(prefers-reduced-motion:reduce){html{scroll-snap-type:none;scroll-behavior:auto}}
