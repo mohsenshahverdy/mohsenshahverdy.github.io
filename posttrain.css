@@ -1,0 +1,17 @@
+.forge-content .research-links{margin-bottom:28px;flex-wrap:wrap}
+.forge-gallery figure{margin-bottom:0}
+.forge-gallery img{aspect-ratio:16/9;object-fit:contain;background:#080d13!important}
+.forge-pipeline{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:24px 0}
+.forge-pipeline li{border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}
+.forge-pipeline span{display:block;font:11px var(--mono);color:var(--blue);margin-bottom:14px}
+.forge-pipeline strong{font-size:16px;font-weight:500}
+.forge-pipeline p{font-size:13px;margin-bottom:0}
+.forge-boundaries{border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--bg)}
+.forge-boundaries>summary{cursor:pointer;color:var(--blue);font-size:14px;padding:4px}
+.forge-boundaries p,.forge-source{font-size:12px;color:var(--muted);line-height:1.8}
+.forge-boundaries a,.forge-source a{color:var(--blue)}
+.forge-source{margin-top:24px}
+.forge-content a:focus-visible,.forge-boundaries>summary:focus-visible{outline:2px solid var(--blue);outline-offset:4px;border-radius:4px}
+.forge-content .thesis-controls button:active{background:#9cc9ef30}
+@media(max-width:1000px){.forge-pipeline{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.forge-pipeline{grid-template-columns:1fr}.forge-content .research-links{display:flex;gap:16px}.forge-boundaries{padding:14px}.forge-content{overflow-wrap:break-word}}
